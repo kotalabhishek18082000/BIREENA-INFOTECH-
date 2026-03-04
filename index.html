@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Kotal | Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        html {
+    scroll-behavior: smooth;
+}
+
+
+        body {
+             background: linear-gradient(135deg, #0c1a22, #182c38, #223e4a);
+
+          overflow-x: hidden;
+            color: white;
+        }
+
+        /* HEADER */
+        .premium-header {
+    position: sticky;
+    top: 7px;
+    margin: 0 5%;
+    padding: 15px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-radius: 50px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+
+    z-index: 1000;
+}
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #00f5ff;
+            color: #ffd700;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 22px;
+        }
+
+        .logo-text {
+    font-size: 22px;
+    font-weight: 700;
+    background: linear-gradient(45deg, #ffd700, #ff8c00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+}
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: #ddd;
+    margin-left: 30px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+/* Gold underline animation */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg,#ffd700,#ff8c00);
+    transition: 0.4s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+        nav a {
+            color: #e6e6e6;
+            /* Soft white */
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #f4b400;
+        }
+
+        /* HERO SECTION */
+
+        .typing {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 10px;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #ffd700;
+    width: 0;
+    animation: typing 4s steps(45, end) forwards,
+               blink 0.8s infinite;
+}
+
+/* Typing Animation */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Cursor Blink */
+@keyframes blink {
+    50% { border-color: transparent }
+}
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 8%;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text span {
+             color: #ffd700;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+
+        }
+
+        .hire-btn {
+            display: inline-block;
+    padding: 15px 40px;
+    background: linear-gradient(45deg, #ffd700, #ffb700);
+    color: #111;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+    
+}
+
+.hire-btn:hover {
+     transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(255, 215, 0, 0.6);
+}
+
+        .hero-text p {
+            font-size: 18px;
+    margin-bottom: 25px;
+    color: #ccc;
+    line-height: 1.7;
+        }
+
+        .hero-btn {
+            padding: 12px 30px;
+            background: #f4b400;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero-btn:hover {
+            background: #1f2d3d;
+            color: white;
+        }
+
+        /* IMAGE */
+        .hero-img {
+            flex: 1;
+            text-align: center;
+            position: relative;
+           
+            
+        }
+
+        .hero-img img {
+            width: 450px;
+            
+            border-radius: 30px;
+            box-shadow: 0 20px 40px 20px rgba(0, 0, 0, 0.2);
+        }
+
+
+
+
+        .floating-icons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.floating-icons i {
+    position: absolute;
+    font-size: 60px;
+    color: #ffd700;
+    opacity: 0.08;
+    animation: float 8s infinite ease-in-out alternate;
+}
+
+/* Individual Positions */
+.floating-icons i:nth-child(1) { top: 10%; left: 15%; }
+.floating-icons i:nth-child(2) { top: 70%; left: 10%; }
+.floating-icons i:nth-child(3) { top: 40%; left: 80%; }
+.floating-icons i:nth-child(4) { top: 20%; left: 60%; }
+.floating-icons i:nth-child(5) { top: 75%; left: 70%; }
+.floating-icons i:nth-child(6) { top: 50%; left: 30%; }
+
+/* Floating Animation */
+@keyframes float {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-30px);
+    }
+}
+
+
+header,
+.hero,
+.section,
+.projects,
+.resume-section,
+.contact-section,
+footer {
+    position: relative;
+    z-index: 1;
+}
+        /* SKILLS */
+        .section {
+            padding: 80px 8%;
+            text-align: center;
+            
+        }
+
+        .section h2 {
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+    position: relative;
+    padding: 40px 30px;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    transition: 0.4s ease;
+    overflow: hidden;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+        .skill-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    border: 1px solid rgba(255, 215, 0, 0.5);
+    box-shadow: 0 20px 60px rgba(255, 215, 0, 0.25);
+}
+
+.skill-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ffd700, transparent);
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+
+.fa-react {
+    animation: spinReact 8s linear infinite;
+}
+
+@keyframes spinReact {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+
+
+
+.skill-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ffd700;
+}
+
+.skill-card p {
+    font-size: 15px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.skill-card:hover::before {
+    opacity: 1;
+}
+
+.skill-icon {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+
+
+
+        /* PROJECTS */
+        .projects {
+            padding: 80px 8%;
+            background:linear-gradient(135deg, #0f2027, #203a43, #2c5364);;
+            color: white;
+            text-align: center;
+        }
+
+        .projects h2 {
+            font-size: 40px;
+            margin-bottom: 50px;
+            color: #ffd700;
+        }
+
+        .project-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            background: #1c1c1c;
+            padding: 30px;
+            width: 300px;
+            border-radius: 15px;
+            
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(255, 215, 0, 0.3);
+        }
+
+        .project-card h3 {
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+
+        .project-card p {
+            font-size: 15px;
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        .project-btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background: #ffd700;
+            color: #111;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .project-btn:hover {
+            background: white;
+            color: black;
+        }
+
+        /* CONTACT */
+      .contact-section {
+        text-align: center;
+    padding: 50px 20px;
+    background: #1f2d3d;
+    color: #ffd700;
+}
+
+.contact-container {
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    color: white;
+}
+
+.contact-item i {
+    width: 25px;   /* Important for same alignment */
+    font-size: 20px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: white;
+    word-break: break-all;
+}
+
+.contact-item a:hover {
+    color: #0077b5;
+}
+
+.premium-resume {
+    padding: 120px 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-box {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+
+    padding: 60px 50px;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border-radius: 30px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+#skills h2 {
+    font-size: 42px;
+    margin-bottom: 60px;
+
+    background: linear-gradient(45deg, #ffd700, #ff8c00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.resume-box p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.resume-box h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+
+    background: linear-gradient(45deg, #ffd700, #ff8c00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.resume-download-btn {
+    display: inline-block;
+    padding: 16px 45px;
+
+    background: linear-gradient(45deg, #ffd700, #ffb700);
+    color: #111;
+    font-weight: 600;
+    text-decoration: none;
+
+    border-radius: 50px;
+    transition: 0.4s ease;
+
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+}
+
+.resume-download-btn:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 15px 45px rgba(255, 215, 0, 0.7);
+}
+
+
+
+
+
+
+        .resume-section {
+            padding: 80px 8%;
+            background: #0f0f0f;
+            text-align: center;
+            color: white;
+        }
+
+        .resume-content h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        .resume-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #ccc;
+        }
+
+        .resume-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(45deg, #ffd700, #ffb700);
+            color: #111;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: 0.4s ease;
+            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
+        }
+
+        .resume-btn:hover {
+            background: #111;
+            color: #ffd700;
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(255, 215, 0, 0.6);
+        }
+
+        .social-links {
+            margin-top: 20px;
+            
+        }
+        .myskill{
+            color:#ffd700
+        }
+
+        .social-btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 30px;
+            background: #ffd700;
+            color: #111;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .social-btn:hover {
+            background: white;
+            color: black;
+            transform: translateY(-5px);
+        }
+/* CONTACT */
+
+
+.contact-info {
+    flex: 1;
+    min-width: 320px;
+    padding: 50px 40px;
+
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255,0.1);
+
+    box-shadow: 
+        0 0 40px rgba(0,0,0,0.6),
+        inset 0 0 30px rgba(255,255,255,0.03);
+
+    transition: 0.4s ease;
+}
+
+.contact-info:hover {
+    transform: translateY(-8px);
+}
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+
+.contact-heading {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 30px;
+
+    background: linear-gradient(45deg, #ffd700, #ff8c00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.info-item i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+
+    border-radius: 50%;
+    margin-right: 15px;
+
+    background: rgba(255,255,255,0.08);
+    color: #ffd700;
+    font-size: 16px;
+
+    transition: 0.3s ease;
+}
+
+.info-item:hover i {
+    background: linear-gradient(45deg, #ffd700, #ff8c00);
+    color: #000;
+    box-shadow: 0 0 15px rgba(255,215,0,0.6);
+}
+
+.social-buttons {
+    margin-top: 30px;
+}
+
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 20px;
+    margin-bottom: 15px;
+
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.1);
+
+    transition: 0.3s ease;
+}
+
+
+.social-btn i {
+    font-size: 18px;
+}
+
+
+.social-btn:hover {
+    background: linear-gradient(45deg, #ffd700, #ff8c00);
+    color: #000;
+
+    transform: translateX(8px);
+    box-shadow: 0 0 20px rgba(255,215,0,0.7);
+}
+.section-title span {
+    background: linear-gradient(45deg, #ffd700, #ff8c00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
+
+    color: #fff;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+    border-color: #ffd700;
+    box-shadow: 0 0 15px rgba(255,215,0,0.5);
+}
+
+
+
+.contact-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+
+    background: linear-gradient(45deg, #ffd700, #ff8c00);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255,215,0,0.7);
+}
+
+
+.contact-info {
+    flex: 1;
+    min-width: 280px;
+    padding: 40px;
+
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.contact-info h3 {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #ffd700;
+}
+
+        
+
+
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1f2d3d;
+            color: white;
+            margin-top: 50px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:900px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-img img {
+                margin-top: 30px;
+            }
+        }
+
+        .section,
+.projects,
+.resume-section,
+.contact-section {
+    animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <header class="premium-header">
+        <div class="logo-container">
+            <a href="#">
+                <img src="A.K (1).ico" alt="Logo" class="logo">
+            </a>
+            <h1 class="logo-text">Abhishek Kotal</h1>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    
+
+    <section class="hero">
+        <div class="hero-text">
+           <h1>Hey There, <br>I'm <span>Abhishek</span></h1>
+
+<h2 class="typing">
+    <span>Full Stack Developer | React Developer | Backend Engineer</span>
+</h2>
+            <p>I am a passionate Full Stack Developer skilled in building modern, responsive, and high-performance web
+                applications using HTML, CSS, and JavaScript for the frontend, along with Node.js and MongoDB for the
+                backend. I focus on creating clean user interfaces, writing efficient code, and developing scalable
+                server-side solutions that deliver seamless user experiences from start to finish.</p>
+            <a href="#contact" class="hire-btn">Hire Me</a>
+        </div>
+
+        <div class="hero-img">
+            <!-- Use your image here -->
+            <img src="two.png" alt="Abhishek Photo">
+        </div>
+    </section>
+
+    <!-- Floating Tech Icons Background -->
+<div class="floating-icons">
+    <i class="fab fa-html5"></i>
+    <i class="fab fa-css3-alt"></i>
+    <i class="fab fa-js"></i>
+    <i class="fab fa-react"></i>
+    <i class="fab fa-node-js"></i>
+    <i class="fas fa-database"></i>
+</div>
+
+    <section class="section" id="skills">
+        <h2 class="myskill">Skills</h2>
+        <div class="skills">
+            <div class="skill-card">
+                 <i class="fas fa-code skill-icon"></i>
+                <h3>Website Development</h3>
+                <p>Skilled in HTML, CSS, JavaScript, React.js, Node.js, Express, and MongoDB. Experienced in building
+                    responsive, scalable, and user-friendly web applications with clean and efficient code. Passionate
+                    about continuous learning and problem-solving.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-react skill-icon"></i>
+                <h3>React Development</h3>
+                <p>Experienced in building dynamic and responsive user interfaces using React.js. Skilled in components,
+                    props, state management, hooks, and routing to create fast, scalable, and maintainable single-page
+                    applications</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-node-js skill-icon"></i>
+                <h3>Backend APIs</h3>
+                <p>Skilled in building secure and scalable RESTful APIs using Node.js and Express.js. Experienced in
+                    handling authentication, middleware, and database integration to ensure efficient data management
+                    and smooth client-server communication.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-chart-line skill-icon"></i>
+                <h3>Data Analyst</h3>
+                <p>Skilled in using Power BI to analyze, visualize, and interpret data through interactive dashboards
+                    and reports. Experienced in data cleaning, transformation, and creating meaningful insights to
+                    support business decision-making.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python skill-icon"></i>
+                <h3>Python Developer</h3>
+                <p>Proficient in Python programming for building efficient, scalable, and maintainable applications.
+                    Experienced in working with data structures, APIs, automation scripts, and backend development
+                    fundamentals.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <h3>Crypto-Tracker Website</h3>
+                <p>A real-time crypto tracking app that displays live prices, market trends, and market data using API
+                    integration with a clean and responsive UI.</p>
+                <a href="https://kotalabhishek18082000.github.io/Crypto_tracker/" target="_blank" class="project-btn">
+                    View Project
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>Todo-App</h3>
+                <p>A full-stack task management app with CRUD functionality, built using HTML, CSS, JavaScript, Node.js,
+                    and MongoDB for seamless and secure task tracking.</p>
+                <a href="https://github.com/kotalabhishek18082000/todo-app" target="_blank" class="project-btn">
+                    View Project </a>
+            </div>
+
+            <div class="project-card">
+                <h3>Student & Admin Management System</h3>
+                <p>A full-stack authentication system with student and admin login, role-based access, and secure
+                    backend integration using Node.js and MongoDB</p>
+                <a href="https://github.com/anandraj123-commit/meanproject1" target="_blank" class="project-btn">
+                    View Project </a>
+            </div>
+
+            <div class="project-card">
+                <h3>AI- Powered Medical Diagnose System
+
+                </h3>
+                <p>An AI-based system that analyzes patient symptoms to predict potential diseases and provide smart
+                    diagnostic insights.</p>
+                <a href="https://github.com/kotalabhishek18082000/AI-Powered-Medical-Diagnose-System" target="_blank"
+                    class="project-btn">
+                    View Project </a>
+            </div>
+
+            <div class="project-card">
+                <h3>AI- Course Recommendation System
+
+
+                </h3>
+                <p>Developed a Course Recommendation System that suggests personalized courses based on user interests
+                    and preferences. Implemented recommendation logic with backend integration to manage and analyze
+                    user and course data efficiently.</p>
+                <a href="https://github.com/kotalabhishek18082000/Academy-innova-world-intrenship-project/tree/main/ai_recommder"
+                    target="_blank" class="project-btn">
+                    View Project </a>
+            </div>
+
+
+        </div>
+    </section>
+
+    
+
+
+    <section id="resume" class="premium-resume">
+    <div class="resume-box">
+
+        <h2>My Resume</h2>
+
+        <p>
+            Interested in working together or learning more about my skills and experience?
+            Download my resume to explore my technical expertise, projects, and achievements.
+        </p>
+
+        <a href="https://drive.google.com/file/d/1Vmq_YNkg9ZwNpft8RWIDgaRzSuGkF0kw/view?usp=sharing" target="_blank" class="resume-download-btn">
+            Download Resume
+        </a>
+
+    </div>
+</section>
+
+    <section class="contact" id="contact">
+    <h2 class="section-title">Get In <span>Touch</span></h2>
+
+    <div class="contact-container">
+    
+
+        <!-- Contact Info -->
+       
+        <div class="contact-info">
+
+    <h3 class="contact-heading">Contact</h3>
+
+    <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <span>kotalabhishek2000@gmail.com</span>
+    </div>
+
+    <div class="info-item">
+        <i class="fas fa-phone"></i>
+        <span>+91 8273047090</span>
+    </div>
+
+    <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>India</span>
+    </div>
+
+    <div class="social-buttons">
+
+        <a href="https://github.com/kotalabhishek18082000" target="_blank" class="social-btn">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+        </a>
+
+        <a href=" https://www.linkedin.com/in/abhishek-kotal-344562229" target="_blank" class="social-btn">
+            <i class="fab fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+        </a>
+
+    </div>
+
+</div>
+        
+
+
+
+
+    </div>
+</section>
+    <footer>
+        © 2025 Abhishek Kotal. All Rights Reserved.
+    </footer>
+
+</body>
+
+</html>
