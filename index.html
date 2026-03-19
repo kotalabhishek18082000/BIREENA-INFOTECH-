@@ -259,6 +259,75 @@
     animation: float 8s infinite ease-in-out alternate;
 }
 
+
+.edu-title{
+    margin-top:50px;
+    margin-bottom:30px;
+    font-size:30px;
+    color:#ffd700;
+}
+
+/* Education Cards Layout */
+.education-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(20px,1fr));
+    gap:25px;
+    margin-top:20px;
+}
+
+/* Individual Card */
+.edu-card{
+    padding:25px 20px;
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    text-align:center;
+    transition:0.4s ease;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.edu-card:hover{
+    transform:translateY(-10px) scale(1.05);
+    border:1px solid rgba(255,215,0,0.5);
+    box-shadow:0 15px 40px rgba(255,215,0,0.3);
+}
+
+/* Icon */
+.edu-card i{
+    font-size:30px;
+    margin-bottom:15px;
+    color:#ffd700;
+}
+
+/* Text */
+.edu-card h3{
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.edu-card p{
+    font-size:14px;
+    color:#ccc;
+    margin-bottom:8px;
+}
+
+.edu-card span{
+    display:block;
+    font-size:13px;
+    color:#aaa;
+}
+
+.edu-card .year{
+    margin-top:8px;
+    color:#ff8c00;
+    font-weight:600;
+}
+
 /* Individual Positions */
 .floating-icons i:nth-child(1) { top: 10%; left: 15%; }
 .floating-icons i:nth-child(2) { top: 70%; left: 10%; }
@@ -376,6 +445,19 @@ footer {
     color: #ffd700;
 }
 
+
+.about-container{
+    max-width:800px;
+    margin:auto;
+    font-size:17px;
+    line-height:1.8;
+    color:#ccc;
+}
+
+.section h2{
+    color:#ff8c00;
+
+}
 
 
 
@@ -628,7 +710,6 @@ footer {
     flex: 1;
     min-width: 320px;
     padding: 50px 40px;
-
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(20px);
     border-radius: 25px;
@@ -646,7 +727,8 @@ footer {
 }
 .section-title {
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
+    color:#ff8c00;
     margin-bottom: 60px;
 }
 
@@ -696,7 +778,7 @@ footer {
 
 
 .social-btn {
-    display: flex;
+    
     align-items: center;
     gap: 12px;
 
@@ -737,6 +819,17 @@ footer {
     gap: 50px;
     justify-content: center;
     flex-wrap: wrap;
+}
+.contact-form{
+    flex:1;
+    min-width:320px;
+    padding:40px;
+
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.1);
 }
 
 
@@ -864,10 +957,13 @@ footer {
             <h1 class="logo-text">Abhishek Kotal</h1>
         </div>
         <nav>
-            <a href="#">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <nav class="nav-links">
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
         </nav>
     </header>
 
@@ -902,6 +998,63 @@ footer {
     <i class="fab fa-node-js"></i>
     <i class="fas fa-database"></i>
 </div>
+ <section id="about" class="section">
+    <h2>About Me</h2>
+
+    <div class="about-container">
+
+        <p>
+            I am <strong>Abhishek Kotal</strong>, a passionate Full Stack Developer
+            skilled in building modern web applications using React, Node.js, and MongoDB.
+        </p>
+
+        <p>
+             <strong>Career Goal:</strong> To become a professional Full Stack Developer 
+            and work on impactful software products.
+        </p>
+
+        <!-- EDUCATION SECTION -->
+        <h2 class="edu-title">Education</h2>
+
+        <div class="education-container">
+
+            <div class="edu-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Bachelor of Technology (B.Tech)</h3>
+                <p>Computer Science and Engineering</p>
+                <span>Ramanand Institute of Pharmacy and Management,Haridwar</span>
+                <span class="year">2022 - 2025</span>
+            </div>
+
+            <div class="edu-card">
+                <i class="fas fa-book"></i>
+                <h3>Diploma</h3>
+                <p>Computer Science and Engineering</p>
+                <span>Government Polytechnic ,Dehradun</span>
+                <span class="year">2019 - 2022</span>
+            </div>
+
+            <div class="edu-card">
+                <i class="fas fa-school"></i>
+                <h3>Intermediate (12th)</h3>
+                <p>Science Stream</p>
+                <span>Jaswant Modern Senior Secondary School,Dehradun</span>
+                <span class="year">2018 - 2019</span>
+            </div>
+
+            <div class="edu-card">
+                <i class="fas fa-school"></i>
+                <h3>High School (10th)</h3>
+                <p>General Education</p>
+                <span>Jaswant Modern Senior Secondary School,Dehradun</span>
+                <span class="year">2016 - 2017</span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
 
     <section class="section" id="skills">
         <h2 class="myskill">Skills</h2>
@@ -1015,7 +1168,7 @@ footer {
             Download my resume to explore my technical expertise, projects, and achievements.
         </p>
 
-        <a href="Abhishek Kotal.pdf (1).pdf" target="_blank" class="resume-download-btn">
+        <a href="https://drive.google.com/file/d/1Vmq_YNkg9ZwNpft8RWIDgaRzSuGkF0kw/view?usp=sharing" target="_blank" class="resume-download-btn">
             Download Resume
         </a>
 
@@ -1029,27 +1182,40 @@ footer {
     
 
         <!-- Contact Info -->
-       
-        <div class="contact-info">
+         <div class="contact-form">
+            <h2 class="section-title">Contact </h2>
 
-    <h3 class="contact-heading">Contact</h3>
+    <form>
 
-    <div class="info-item">
-        <i class="fas fa-envelope"></i>
-        <span>kotalabhishek2000@gmail.com</span>
+        <div class="input-box">
+            <input type="text" placeholder="Your Name" required>
+        </div>
+
+        <div class="input-box">
+            <input type="email" placeholder="Your Email" required>
+        </div>
+
+        <div class="input-box">
+            <textarea rows="5" placeholder="Your Message"></textarea>
+        </div>
+
+        <button type="submit" class="contact-btn">
+            Send Message
+        </button>
+
+    </form>
+
+</div>
+        
+
+
+
+
     </div>
+</section>
+    <footer>
 
-    <div class="info-item">
-        <i class="fas fa-phone"></i>
-        <span>+91 8273047090</span>
-    </div>
-
-    <div class="info-item">
-        <i class="fas fa-map-marker-alt"></i>
-        <span>India</span>
-    </div>
-
-    <div class="social-buttons">
+         <div class="social-buttons">
 
         <a href="https://github.com/kotalabhishek18082000" target="_blank" class="social-btn">
             <i class="fab fa-github"></i>
@@ -1062,21 +1228,9 @@ footer {
         </a>
 
     </div>
-
-</div>
-        
-
-
-
-
-    </div>
-</section>
-    <footer>
         © 2025 Abhishek Kotal. All Rights Reserved.
     </footer>
 
 </body>
 
-
 </html>
-
