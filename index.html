@@ -29,6 +29,31 @@
         }
 
         /* HEADER */
+@media (max-width: 768px) {
+
+    .premium-header {
+        flex-direction: column;
+        padding: 15px 20px;
+        border-radius: 20px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        margin: 10px 12px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
         .premium-header {
     position: sticky;
     top: 7px;
@@ -180,6 +205,63 @@
     text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
 
         }
+        .hero-text p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #ccc;
+    line-height: 1.7;
+
+    max-width: 600px;   /* 🔥 important */
+}
+
+@media (max-width: 768px) {
+
+    .hero-text p {
+        font-size: 15px;
+        line-height: 1.6;
+        max-width: 100%;
+        padding: 0 10px;   /* spacing from sides */
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .hero-text p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+}
+
+
+
+
+        @media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .typing {
+        font-size: 16px;
+    }
+
+    .hero-img img {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+
+
+
+
 
         .hire-btn {
             display: inline-block;
@@ -233,6 +315,7 @@
         .hero-img img {
             width: 450px;
             
+            
             border-radius: 30px;
             box-shadow: 0 20px 40px 20px rgba(0, 0, 0, 0.2);
         }
@@ -269,10 +352,11 @@
 
 /* Education Cards Layout */
 .education-container{
+    
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(20px,1fr));
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
     gap:25px;
-    margin-top:20px;
+
 }
 
 /* Individual Card */
@@ -944,6 +1028,130 @@ footer {
         transform: translateY(0);
     }
 }
+
+
+/* ================= MOBILE (max-width: 600px) ================= */
+@media (max-width: 600px) {
+
+    .premium-header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .nav-links a {
+        margin: 10px;
+        display: inline-block;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .typing {
+        font-size: 18px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .hero-img img {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .section {
+        padding: 50px 5%;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+    .resume-box {
+        padding: 30px 20px;
+    }
+
+    .edu-card {
+        padding: 20px;
+    }
+}
+
+
+/* ================= TABLET (max-width: 900px) ================= */
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img img {
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    .project-container {
+        justify-content: center;
+    }
+
+    .project-card {
+        width: 45%;
+    }
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .education-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ================= LARGE SCREENS ================= */
+@media (min-width: 1200px) {
+
+    .hero-text h1 {
+        font-size: 60px;
+    }
+
+    .section {
+        padding: 100px 10%;
+    }
+
+    .project-card {
+        width: 320px;
+    }
+}
     </style>
 </head>
 
@@ -1185,25 +1393,29 @@ footer {
          <div class="contact-form">
             <h2 class="section-title">Contact </h2>
 
-    <form>
+            <form action="https://formsubmit.co/kotalabhishek2000@gmail.com" method="POST">
 
-        <div class="input-box">
-            <input type="text" placeholder="Your Name" required>
-        </div>
+    <input type="hidden" name="_subject" value="New Portfolio Message!">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
 
-        <div class="input-box">
-            <input type="email" placeholder="Your Email" required>
-        </div>
+    <div class="input-box">
+        <input type="text" name="name" placeholder="Your Name" required>
+    </div>
 
-        <div class="input-box">
-            <textarea rows="5" placeholder="Your Message"></textarea>
-        </div>
+    <div class="input-box">
+        <input type="email" name="email" placeholder="Your Email" required>
+    </div>
 
-        <button type="submit" class="contact-btn">
-            Send Message
-        </button>
+    <div class="input-box">
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    </div>
 
-    </form>
+    <button type="submit" class="contact-btn">
+        Send Message
+    </button>
+
+</form>
 
 </div>
         
